@@ -5,7 +5,7 @@ public class ThreadDemo {
 		@SuppressWarnings("unused")
 		NewThread childThread = new NewThread("Some name");
 		try {
-			for(int i = 5;i>=1;i--) {
+			for(int i = 3;i>=1;i--) {
 				System.out.println("Main thread: "+i);
 				Thread.sleep(200);
 			}
@@ -26,7 +26,7 @@ class NewThread implements Runnable{
 	@Override
 	public void run() {
 		try {
-			for(int i = 5;i>=1;i--) {
+			for(int i = 3;i>=1;i--) {
 				System.out.println("Child thread: "+i);
 				Thread.sleep(500);
 			}
