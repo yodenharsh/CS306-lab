@@ -20,7 +20,6 @@ public class HashSetEx {
 		System.out.println(set);
 		set.removeAll(tempSet);
 		System.out.println(set);
-		System.out.println(set);
 		set.removeIf(str -> str.equals("Harsh"));
 		System.out.println(set);
 		set.clear();
